@@ -1,7 +1,5 @@
 #include <iostream>
 
-#include "rot5_13.h"
-
 void rot5_rot13(char& ch) {
 
    // Stub — Do nothing...
@@ -9,11 +7,10 @@ void rot5_rot13(char& ch) {
             // issuing 'warning: unused parameter ‘ch’'.
 }
 
-std::string encryptMessage(std::string original){
+void rot_13(std::string& encrypt){
+
   
-  std::cout << "hello";
-
-
+  
 }
 
 void test(){

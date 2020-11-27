@@ -6,8 +6,10 @@
 
 void rot5_rot13(char&);
 
-std::string encryptMessage(std::string original);
+void encryptMessage(std::string original);
 
 void test();
+
+#include "rot5_13.cpp"
 
 #endif

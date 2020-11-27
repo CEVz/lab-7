@@ -1,19 +1,15 @@
 #include <iostream>
 #include <string>
 
-//#include "rot5_13.cpp"
+#include "rot5_13.h"
 
 int main () {
 
   std::string decipher;
   std::string encrypt;
   getline(std::cin, encrypt);
-  encryptMessage(encrypt);
-  //test();
-  
-  //decipher.encryptMessage(encrypt);
-  
-  
+  test();
+  rot_13(encrypt);
 
   
 
