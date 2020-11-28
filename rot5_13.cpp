@@ -1,5 +1,6 @@
 #include <iostream>
 #include <locale>
+#include <regex>
 
 void rot5_rot13(char& ch) {
 
@@ -8,7 +9,7 @@ void rot5_rot13(char& ch) {
             // issuing 'warning: unused parameter ‘ch’'.
 }
 
-void rot_13(std::string encrypt, std::string decipher){
+void rot5_13(std::string encrypt, std::string decipher, std::string zeroToNine){
 
   std::locale loc;
   int key = 13;
@@ -18,6 +19,8 @@ void rot_13(std::string encrypt, std::string decipher){
   }
 
   std::cout << encrypt << std::endl;
+
+  std::regex intReg("[\\d\\s]+");
 
   for (int i = 0; i < encrypt.length(); i++){
     int temp = encrypt[i] + key;
@@ -29,16 +32,14 @@ void rot_13(std::string encrypt, std::string decipher){
       decipher += (char)temp;
     }
     else {
-      decipher += (char)temp;
+      for (int j = 0; j < zeroToNine.length(); i++){
+	if (encrypt[i] == zeroToNine[j]){
+	  decipher += (int)temp;
+	}
+      }
     }
   }
 
   std::cout << decipher << std::endl;
   
-}
-
-void test(){
-
-  std::cout << "hello";
-
 }

@@ -6,9 +6,7 @@
 
 void rot5_rot13(char&);
 
-void rot_13(std::string encrypt , std::string decipher);
-
-void test();
+void rot5_13(std::string encrypt , std::string decipher, std::string zeroToNine);
 
 #include "rot5_13.cpp"
 
