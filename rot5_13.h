@@ -6,7 +6,7 @@
 
 void rot5_rot13(char&);
 
-void encryptMessage(std::string original);
+void rot_13(std::string encrypt , std::string decipher);
 
 void test();
 
